@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="toyProject_lectureTime" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전체 강의 시간(분): " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbI-dc-WAW">
+                                <rect key="frame" x="80" y="235" width="133" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="배속:       X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3TX-jx-bEK">
+                                <rect key="frame" x="80" y="336" width="133" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="단축된 강의 시간" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8c-yd-tdX">
+                                <rect key="frame" x="50" y="668" width="314" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="절약한 시간" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfU-Lm-gxL">
+                                <rect key="frame" x="50" y="752" width="314" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bKO-u1-oKM">
+                                <rect key="frame" x="243" y="228.5" width="91" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJl-tt-4t1">
+                                <rect key="frame" x="137" y="521" width="140" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="dte-OO-x73"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="계산"/>
+                                <connections>
+                                    <action selector="btnCalculation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u0R-8G-Ey1"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PH5-PC-mZs">
+                                <rect key="frame" x="243" y="329.5" width="91" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="강의시간 계산하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVB-vY-2VA">
+                                <rect key="frame" x="100" y="93" width="214" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="cwP-rA-DHV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GbI-dc-WAW" firstAttribute="centerY" secondItem="bKO-u1-oKM" secondAttribute="centerY" id="0j6-rt-R7E"/>
+                            <constraint firstItem="eJl-tt-4t1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="6q3-tN-xJf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KVB-vY-2VA" secondAttribute="trailing" constant="100" id="6wq-kI-bes"/>
+                            <constraint firstItem="KVB-vY-2VA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="DdB-vY-Mii"/>
+                            <constraint firstItem="GbI-dc-WAW" firstAttribute="trailing" secondItem="3TX-jx-bEK" secondAttribute="trailing" id="LYf-kr-6OA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o8c-yd-tdX" secondAttribute="trailing" constant="50" id="MdE-N2-SSp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bKO-u1-oKM" secondAttribute="trailing" constant="80" id="Nd2-ea-kd6"/>
+                            <constraint firstItem="o8c-yd-tdX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="P1F-La-MYs"/>
+                            <constraint firstItem="bKO-u1-oKM" firstAttribute="leading" secondItem="PH5-PC-mZs" secondAttribute="leading" id="RyZ-jr-Vsj"/>
+                            <constraint firstItem="bKO-u1-oKM" firstAttribute="trailing" secondItem="PH5-PC-mZs" secondAttribute="trailing" id="S4f-tZ-IE4"/>
+                            <constraint firstItem="eJl-tt-4t1" firstAttribute="centerX" secondItem="o8c-yd-tdX" secondAttribute="centerX" id="SXP-rh-ctg"/>
+                            <constraint firstItem="o8c-yd-tdX" firstAttribute="trailing" secondItem="vfU-Lm-gxL" secondAttribute="trailing" id="VY8-YX-Y7t"/>
+                            <constraint firstItem="GbI-dc-WAW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="XHG-qn-ihe"/>
+                            <constraint firstItem="GbI-dc-WAW" firstAttribute="leading" secondItem="3TX-jx-bEK" secondAttribute="leading" id="ZwE-jZ-eO1"/>
+                            <constraint firstItem="KVB-vY-2VA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="49" id="eOv-jn-rBx"/>
+                            <constraint firstItem="vfU-Lm-gxL" firstAttribute="top" secondItem="o8c-yd-tdX" secondAttribute="bottom" constant="63" id="hIP-2i-l4R"/>
+                            <constraint firstItem="bKO-u1-oKM" firstAttribute="leading" secondItem="GbI-dc-WAW" secondAttribute="trailing" constant="30" id="lgq-RO-1nU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vfU-Lm-gxL" secondAttribute="bottom" constant="89" id="oDH-Vi-CWN"/>
+                            <constraint firstItem="3TX-jx-bEK" firstAttribute="centerY" secondItem="PH5-PC-mZs" secondAttribute="centerY" id="qcm-00-WkJ"/>
+                            <constraint firstItem="o8c-yd-tdX" firstAttribute="leading" secondItem="vfU-Lm-gxL" secondAttribute="leading" id="sYa-gh-WCy"/>
+                            <constraint firstItem="bKO-u1-oKM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="228.5" id="tzO-Ho-M1G"/>
+                            <constraint firstItem="PH5-PC-mZs" firstAttribute="top" secondItem="bKO-u1-oKM" secondAttribute="bottom" constant="67" id="ugz-b2-39X"/>
+                            <constraint firstItem="o8c-yd-tdX" firstAttribute="top" secondItem="eJl-tt-4t1" secondAttribute="bottom" constant="77" id="w2y-c5-Jwx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnCaculation" destination="eJl-tt-4t1" id="Nx8-bM-la9"/>
+                        <outlet property="howFast" destination="PH5-PC-mZs" id="nY9-DA-bSO"/>
+                        <outlet property="howMuchSaved" destination="vfU-Lm-gxL" id="uIf-Xv-hht"/>
+                        <outlet property="savedTotalTime" destination="o8c-yd-tdX" id="0Vk-ec-ts0"/>
+                        <outlet property="totalTime" destination="bKO-u1-oKM" id="5K0-EE-MkZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.04347826086958" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

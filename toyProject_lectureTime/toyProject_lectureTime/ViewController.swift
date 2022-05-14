@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         setBtnAttributes()
-        
+        print("hello test")
     }
     
     func setBtnAttributes() {

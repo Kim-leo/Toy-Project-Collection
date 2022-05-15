@@ -19,6 +19,7 @@ SecondViewController에서는 news api를 가져온 후 title, subtitle, imageUR
   
 ### - Web browser App
 **WebKit, UIProgressView, WKWebView**의 기능을 살피고 이를 활용한다.
+**UITableView**를 추가하여 해당 URL로 접속하는 기능을 담은 프로그램 파일을 추가하였다.
   
 ### - jsonPracice
 전국의 복권판매점의 주소와 위치정보가 있는 **json** 파일을 읽어오고 이를 출력하는 기능을 연습한다.

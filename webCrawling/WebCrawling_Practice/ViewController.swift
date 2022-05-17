@@ -13,8 +13,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var priceArr = [String]()
-    var noCommaArr = [String]()
-    var noSpaceArr = [String]()
     var numArr = [Int]()
     var priceSum: Int?
     var priceAverage: Int?
@@ -43,39 +41,26 @@ class ViewController: UIViewController {
             // 가격 정보 추출 후 -> 테이블뷰 셀에 표시
             let price: Elements = try doc.select(".article-info").select(".article-price")
             priceArr = try price.text().components(separatedBy: "원") //type: Array<String>
-            print(priceArr)
-            print(type(of: priceArr))
-//            newArr = priceArr.compactMap { Float($0) ?? 0 }
-//            print(newArr)
-//            print(type(of: newArr))
+//            print(priceArr)
+//            print(type(of: priceArr))
             
-            // priceArr내의 가격에 콤마를 지운 후
+            // priceArr내의 가격의 콤마와 스페이스를 지운 후, 정수형배열(numArr)로 저장
             for i in 0..<priceArr.count {
+                var noComma = ""
+                var noSpace = ""
                 if priceArr[i].contains(",") {
-                    print("yes")
-                    noCommaArr.append(priceArr[i].replacingOccurrences(of: ",", with: ""))
-                    if priceArr[i].contains(" "){
-                        noSpaceArr.append(noCommaArr[i].replacingOccurrences(of: " ", with: ""))
-                    } else {
-                        noSpaceArr.append(noCommaArr[i])
-                    }
+                    noComma = priceArr[i].replacingOccurrences(of: ",", with: "")
+                    noSpace = noComma.replacingOccurrences(of: " ", with: "")
+                    numArr.append(Int(noSpace) ?? 0)
                 } else {
                     priceArr.remove(at: i)
                 }
             }
-            // 가격 평균 구하기
-            numArr = noSpaceArr.map{ Int($0)! }
             priceSum = numArr.reduce(0, +)
             priceAverage = priceSum! / numArr.count
-            noSpaceArr.append(String(priceAverage!))    //가격 평균을 noSpaceArr 마지막에 추가
+            numArr.append(priceAverage!)    //가격 평균을 numArr 마지막에 추가
             
-            print(priceArr)
-            print(noCommaArr) //가격에서 콤마 제거
-            print(noSpaceArr) //가격에서 띄어쓰기 제거
-            print(numArr)     //String Array -> Int Array
-           
-            print(priceAverage!)
-
+            print(numArr)
             
         } catch Exception.Error(let type, let message){
             print("Message: \(message)")
@@ -87,13 +72,13 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return noSpaceArr.count
+        return numArr.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        cell.textLabel?.text = noSpaceArr[indexPath.row]
+        cell.textLabel?.text = String(numArr[indexPath.row])
         return cell
     }
     

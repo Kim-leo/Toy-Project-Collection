@@ -36,4 +36,4 @@ SecondViewController에서는 news api를 가져온 후 title, subtitle, imageUR
 **SwiftSoup Cocoapods**를 사용하여 **html**로부터 원하는 정보를 가져와 출력하는 프로그램을 제작한다.
 
   
-![Footer](https://capsule-render.vercel.app/api?type=Waving&color=gradient&height=150&section=footer&animation=fadeIn) 
+![Footer](https://capsule-render.vercel.app/api?type=Waving&color=F&height=150&section=footer&animation=fadeIn) 

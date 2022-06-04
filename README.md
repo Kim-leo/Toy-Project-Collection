@@ -28,12 +28,16 @@ SecondViewController에서는 news api를 가져온 후 title, subtitle, imageUR
 ### - jsonPracice
 전국의 복권판매점의 주소와 위치정보가 있는 **json** 파일을 읽어오고 이를 출력하는 기능을 연습한다.
   
+### - jsonPractice2
+json과 tab bar를 이용하여 미국 백악관 탄원서를 parse하는 기능을 연습한다. 
+  
 ### - toyProject_lectureTime
 **UILabel, UITextField, UIButton**과 **UIAlertController**기능을 활용하여 
 <br>인터넷강의시간을 N배속으로 수강했을 때의 절약시간과 얼마만큼 절약됐는지 출력하는 프로그램을 제작한다.
   
 ### - WebCrawling_Practice
 **SwiftSoup Cocoapods**를 사용하여 **html**로부터 원하는 정보를 가져와 출력하는 프로그램을 제작한다.
+  
 
   
 ![Footer](https://capsule-render.vercel.app/api?type=Waving&color=F&height=150&section=footer&animation=fadeIn) 

@@ -5,6 +5,9 @@
 //  Created by 김승현 on 2022/06/04.
 //
 
+
+// 각 petition 내용을 표시할 DetailViewController.
+
 import UIKit
 import WebKit
 
@@ -21,6 +24,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // detailItem에 어떤 data가 전달되지 않는 것을 방지하기 위해 guard 사용.
         guard let detailItem = detailItem else { return }
         let html = """
 <html>
@@ -33,7 +37,7 @@ class DetailViewController: UIViewController {
 </body>
 </html>
 """
-        
+        // WKWebView안에 html코드를 로드하는 코드.
         webView.loadHTMLString(html, baseURL: nil)
     }
     

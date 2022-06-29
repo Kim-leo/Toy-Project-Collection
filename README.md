@@ -31,6 +31,9 @@ SecondViewController에서는 news api를 가져온 후 title, subtitle, imageUR
 ### - jsonPractice2
 json과 tab bar를 이용하여 미국 백악관 탄원서를 parse하는 기능을 연습한다. 
   
+### - logIn_and_register_screen
+로그인과 회원가입 기능을 연습한다. 
+  
 ### - toyProject_lectureTime
 **UILabel, UITextField, UIButton**과 **UIAlertController**기능을 활용하여 
 <br>인터넷강의시간을 N배속으로 수강했을 때의 절약시간과 얼마만큼 절약됐는지 출력하는 프로그램을 제작한다.

@@ -38,8 +38,7 @@ json과 tab bar를 이용하여 미국 백악관 탄원서를 parse하는 기능
 ### - WebCrawling_Practice
 **SwiftSoup Cocoapods**를 사용하여 **html**로부터 원하는 정보를 가져와 출력하는 프로그램을 제작한다.
   
-### - what to wear today
-사용자 위치 정보와 날씨 API정보를 가져와서 날씨에 맞는 옷차림을 추천하는 어플.
+
   
 
   

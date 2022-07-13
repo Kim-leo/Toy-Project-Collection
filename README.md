@@ -15,6 +15,9 @@ ViewController에서는 Swift에서 API를 사용하는 방식에서 **GET, POST
 <br>
 SecondViewController에서는 news api를 가져온 후 title, subtitle, imageURL 등의 정보를 사용하여 tableView에 출력한다.
 
+### - Custom_TabBar_Practice
+UIBezierPath를 이용하여 TabBar를 커스텀하고 hex color 사용법을 연습한다.
+
 ### - MapKit_Practice
 **MapKit**의 간단한 기능을 단계별로 학습할 수 있는 어플이다. 
 <br> - **firstViewController**: 화면에 사용자위치를 나타낸 지도 출력

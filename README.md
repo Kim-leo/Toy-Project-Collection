@@ -26,7 +26,10 @@ iOS 아키텍처 패턴 중 MVVM 패턴을 간단한 예제와 함께 연습한�
 <br> - **firstViewController**: 화면에 사용자위치를 나타낸 지도 출력
 <br> - **secondViewController**: **segmentController**를 사용하여 해당 위치로 이동 + 핀 사용
 <br> - **thirdViewController**: 지도 위의 터치한 지점의 주소와 핀을 출력
-  
+
+### - UIViewManually
+코드로 UILabel을 선언하고, ViewController 외부인, View.swift 파일에서 UIView 요소를 관리한다.
+
 ### - Web browser App
 **WebKit, UIProgressView, WKWebView**의 기능을 살피고 이를 활용한다.
 <br>**UITableView**를 추가하여 해당 URL로 접속하는 기능을 담은 프로그램 파일을 추가하였다.
